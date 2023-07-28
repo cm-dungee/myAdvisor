@@ -1,0 +1,1520 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+/*-----------------------------------------------------BASE STYLES-----------------------------------------------------*/  
+   
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+html {
+	font-size: 16px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: Arial;
+	color: #393635;
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------------------------------------GlOBAL STYLES-----------------------------------------------------*/ 
+
+/*TOP LEVEL CONTAINER*/
+
+/* main { */
+	/* padding-top: 3em; */
+/* } */
+
+/*UNORDERED LISTS*/
+
+.item-head {
+	text-decoration: underline;
+	list-style-type: none;
+}
+
+.sub-item {
+	list-style-type: square;
+	margin-left: 2em;
+	line-height: 2;
+}
+
+/*TOP NAVIGATION MENU*/
+
+.top-nav {
+	background-color: #393635;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+.top-nav a {
+	float: left;
+	display: block;
+	color: #FFF;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.top-nav a:hover {
+	color: #FFCF06;
+}
+
+.top-nav a.active {
+	background-color: #0E579B;
+	color: #FFCF06;
+} 
+
+.top-nav .icon {
+	display: none;
+} 
+
+/*FOOTER*/
+
+footer {
+	color: #FFF;
+	background-color: #0E579B;
+}
+
+.footer-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1em;
+	
+}
+
+.location {
+	font-size: .9rem;
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: .3em;
+}
+
+.app img {
+	width: 32px;
+	height: 32px;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-evenly;
+	width: 250px;
+}
+
+.socials img {
+	width: 36px;
+	height: 36px;
+	box-shadow: 0 4px 8px 0 rgba(255,246,219,.2), 0 6px 20px 0 rgba(255,246,219,0.19);
+}
+
+/*-----------------------------------------------------HOME PAGE STYLES-----------------------------------------------------*/ 
+
+/*INTRO MESSAGE*/
+
+.home-intro {
+	font-size: 1.5rem;
+	background-color: #0E579B;
+	color: #FFF;
+}
+
+.hi-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	padding: 1em 0;
+}
+
+.dccc-logo {
+	flex: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo {
+	max-width: 100%;
+	height: auto;
+}
+
+.intro-message {
+	flex: 65%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-shadow: 1px 1px #000;
+}
+
+.intro-message h1 {
+	margin: 0;
+}
+
+.intro-message h3 {
+	font-style: italic;
+	font-size: 1rem;
+}
+
+/*HOME PAGE BLURB AND IMAGE*/
+
+.home-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3em 0;
+}
+
+.hc-wrapper {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	font-size: 1.4rem;
+}
+
+.image-text {
+	flex: 70%;
+	display: flex;
+	justify-content: center;
+	line-height: 2;
+}
+
+.image-text p {
+	width: 80%;
+}
+
+.image-text a:link {
+	color: #5887AF;
+	text-decoration: none;
+	text-shadow: 2px 2px #FFCF06;
+}
+
+.image-text a:visited {
+	color: #5887AF;
+	text-decoration: none;
+	text-shadow: 2px 2px #FFCF06;
+}
+
+.image-text a:hover {
+	color: #FFCF06;
+	text-shadow: 2px 2px #0E579B;
+}
+
+.image-text a:active {
+	color: #5887AF;
+	text-decoration: none;
+	text-shadow: 2px 2px #FFCF06;
+}
+
+#font-change {
+	text-transform: uppercase;
+}
+
+.pic-of-me {
+	flex: 30%;
+}
+
+#me {
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.image-text2 {
+	flex: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2em;
+	line-height: 2;
+}
+
+.image-text2 p, ul {
+	width: 90%;
+}
+
+.item-head {
+	text-decoration: underline;
+	list-style-type: none;
+}
+
+.sub-item {
+	list-style-type: square;
+	margin-left: 2em;
+}
+
+/*-----------------------------------------------------APPOINTMENTS PAGE STYLES-----------------------------------------------------*/ 
+
+.appt-content {
+	height: 1000px;
+	padding: 3em 3em 5em 3em;
+}
+
+.appt-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 2;
+}
+
+.appt-wrapper h3 {
+	color: #0E579B;
+}
+
+.appt-wrapper p, li {
+	font-size: 1.1rem;
+}
+
+.appt-wrapper a:link {
+	color: #104E8B;
+	text-decoration: none;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.appt-wrapper a:visited {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.appt-wrapper a:hover {
+	text-decoration: underline;
+}
+
+.appt-wrapper a:active {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+
+/*-----------------------------------------------------CONTACT PAGE STYLES-----------------------------------------------------*/ 
+
+.contact-content {
+	height: 700px;
+	padding: 3em 3em 5em 3em;
+}
+
+.contact-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-info {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	line-height: 2;
+}
+
+.contact-info div {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	padding: 2em;
+}
+
+.contact-info h3 p {
+	font-size: 1.2rem;
+}
+
+.contact-info h3 {
+		color: #0E579B;
+}
+
+.contact-wrapper h2 {
+	margin-bottom: 3em;
+}
+
+.contact-wrapper a:link {
+	color: #104E8B;
+	text-decoration: none;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.contact-wrapper a:visited {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.contact-wrapper a:hover {
+	text-decoration: underline;
+}
+
+.contact-wrapper a:active {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+
+/*-----------------------------------------------------FAQs PAGE STYLES-----------------------------------------------------*/ 
+
+.faq-content {
+	height: auto;
+	padding: 2em 3em 11em 2em;
+}
+
+.faq-wrapper button {
+	border: 2px solid #104E8B;
+}
+
+.faq-wrapper h2 {
+	margin-bottom: 3em;
+}
+
+.collapsible {
+	background-color: #FFCF06;
+	color: #104E8B;
+	font-weight: 600;
+	font-size: 1.2rem;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+}
+
+.collapsible:after {
+	content: '\02795';
+	font-size: 1.2rem;
+	color: #104E8B;
+	float: right;
+	margin-left: 1em;
+}
+
+.activeColl:after {
+	content: "\2796";
+}
+
+.activeColl, .collapsible:hover {
+	background-color: #FFF;
+}
+
+.coll-content {
+	padding: 1em 2em;
+	display: none;
+	overflow: hidden;
+	background-color: #FFF;
+	line-height: 2.5;
+	border: 1px solid #104E8B;
+}
+
+.coll-content h3 {
+	font-size: 1.1rem;
+}
+
+.coll-content li {
+	margin-left: 2em;
+	list-style: square inside;
+}
+
+.coll-content p {
+	font-size: 1.1rem;
+}
+
+.coll-content a:link {
+	color: #104E8B;
+	text-decoration: none;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.coll-content a:visited {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.coll-content a:hover {
+	text-decoration: underline;
+}
+
+.coll-content a:active {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+/*-----------------------------------------------------ANNOUNCEMENTS PAGE STYLES-----------------------------------------------------*/ 
+
+.ann-content {
+	height: 1000px;
+	padding: 2em 3em 0 2em;
+}
+
+.ann-wrapper h2 {
+	margin-bottom: 1em;
+}
+
+.grid {
+	display: flex;
+	font-size: 1.1rem;
+	border-bottom: 1px solid #000;
+	padding-bottom: 1em;
+}
+
+.update {
+	flex: 85%;
+}
+
+.date {
+	flex: 15%;
+}
+
+.grid a:link {
+	color: #104E8B;
+	text-decoration: none;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.grid a:visited {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+.grid a:hover {
+	text-decoration: underline;
+}
+
+.grid a:active {
+	color: #104E8B;
+	text-shadow: 1px 1px 4px #FFCF06;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+	.home-intro {
+		font-size: 1.2rem;
+	}
+
+	.hc-wrapper {
+		font-size: 1.3rem;
+	}
+	
+	/*announcements page*/
+	
+	.ann-content {
+		height: 1000px;
+		padding: 2em 1em 0 1em;
+	}
+
+	.ann-wrapper h2 {
+		margin-bottom: 1em;
+	}
+
+	.grid {
+		display: flex;
+		font-size: 1rem;
+		border-bottom: 1px solid #000;
+		padding-bottom: 1em;
+	}
+
+	.update {
+		flex: 70%;
+		border-right: 1px solid black;
+
+	}
+
+	.date {
+		flex: 20%;
+		padding-left: 1em;
+	}
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.home-intro {
+		font-size: 1rem;
+	}
+	
+	#logo {
+		max-width: 90%;
+		height: auto;
+	}
+	
+	
+	/*home page*/
+	
+	.hc-wrapper {
+		font-size: 1.1rem;
+	}
+	
+	.image-text {
+		flex: 50%;
+	}
+	
+	.pic-of-me {
+		flex: 50%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	/*appointments page*/
+	
+	.appt-content {
+		padding: 2em 2em 8em 2em;
+	}
+	
+	/*contact page*/
+	
+	.contact-content {
+		height: 1000px;
+	}
+	
+	.contact-wrapper {
+		height: 90%;
+		font-size: 1rem;
+	}
+	
+	.contact-wrapper h2 {
+		margin-bottom: 0;
+	}
+	
+	.contact-info {
+		height: 100%;
+		flex-direction: column;
+		align-items: space-around;
+	}
+	
+	/*faqs page*/
+	
+	.faq-wrapper h2 {
+		font-size: 1.5rem;
+	}
+	
+	.faq-content {
+		height: auto;
+		padding: 2em 3em 18em 2em;
+	}
+	
+	.collapsible {
+		font-size: 1rem;
+	}
+	
+	.collapsible:after {
+		font-size: 1rem;
+	}
+	
+	.coll-content h3 {
+		font-size: 1rem;
+	}
+
+	.coll-content p {
+		font-size: 1rem;
+	}
+	
+	/*announcements page*/
+	
+	.ann-content {
+		height: 1000px;
+		padding: 2em 1em 0 1em;
+	}
+
+	.ann-wrapper h2 {
+		margin-bottom: 1em;
+		font-size: 1.3rem;
+	}
+
+	.grid {
+		display: flex;
+		font-size: 1rem;
+		border-bottom: 1px solid #000;
+		padding-bottom: 1em;
+	}
+
+	.update {
+		flex: 70%;
+		border-right: 1px solid black;
+
+	}
+
+	.date {
+		flex: 20%;
+		padding-left: 1em;
+	}
+		
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.top-nav a:not(:first-child) {display: none;}
+	.top-nav a.icon {
+		float: right;
+		display: block;
+	}
+	
+	.top-nav.responsive {position: relative;}
+	.top-nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.top-nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.home-intro {
+		font-size: .6rem;
+	}
+	
+	.dccc-logo {
+		flex: 30%;
+	}
+	
+	#logo {
+		max-width: 90%;
+		height: auto;
+	}
+	
+	/*home page*/
+	
+	.intro-message {
+		flex: 70%;
+	}
+	
+	.intro-message h3 {
+		font-size: .8rem;
+	}
+	
+	.hc-wrapper {
+		font-size: 1rem;
+	}
+	
+	.image-text {
+		flex: 50%;
+		margin-bottom: 1em;
+	}
+	
+	.pic-of-me {
+		flex: 50%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	/*appointments page*/
+	
+	.appt-content {
+		padding: 5em 2em 9em 2em;
+	}
+	
+	.appt-wrapper h2 {
+		font-size: 1.3rem;
+	}
+	
+	.appt-wrapper h3 {
+		font-size: 1.1rem;
+	}
+	
+	.appt-wrapper p, li {
+		font-size: 1rem;
+	}
+	
+	/*contact page*/
+	
+	.contact-content {
+		height: 1000px;
+	}
+	
+	.contact-wrapper {
+		height: 90%;
+		font-size: .9rem;
+	}
+	
+	.contact-wrapper h2 {
+		margin-bottom: 0;
+	}
+	
+	.contact-info {
+		height: 100%;
+		flex-direction: column;
+		align-items: space-around;
+	}
+	
+	/*faqs page*/
+	
+	.faq-content {
+		padding: 2em 1em 11em 1em;
+	}
+	
+	.faq-wrapper h2 {
+		font-size: 1.1rem;
+	}
+	
+	.collapsible {
+		font-size: .9rem;
+	}
+	
+	.collapsible:after {
+		font-size: .9rem;
+
+	}
+
+	.coll-content {
+		padding: 1em;
+	}
+	
+	.coll-content h3 {
+		font-size: .9rem;
+	}
+
+	.coll-content p {
+		font-size: .9rem;
+	}
+	
+	.coll-content li {
+		margin-left: 1em;
+		font-size: .9rem;
+	}
+	
+	/*announcements page*/
+	
+	.ann-content {
+		height: 1000px;
+		padding: 2em 1em 0 1em;
+	}
+
+	.ann-wrapper h2 {
+		margin-bottom: 1em;
+		font-size: 1.1rem;
+	}
+
+	.grid {
+		display: flex;
+		font-size: .9rem;
+		border-bottom: 1px solid #000;
+		padding-bottom: 1em;
+	}
+
+	.update {
+		flex: 70%;
+		border-right: 1px solid black;
+	}
+
+	.date {
+		flex: 20%;
+		padding-left: 1em;
+	}
+	
+	/*footer*/
+	
+	.footer-wrapper {
+		flex-direction: column;
+		padding: .3em;
+	}
+
+	.location {
+		font-size: .8rem;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.app {
+		font-size: .7rem;
+		text-align: center;
+		padding: .5em;
+		margin-bottom: 1em;
+	}
+
+	.app img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.socials {
+		width: 250px;
+	}
+
+	.socials img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.top-nav a:not(:first-child) {display: none;}
+	.top-nav a.icon {
+		float: right;
+		display: block;
+	}
+	
+	.top-nav.responsive {position: relative;}
+	.top-nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.top-nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.home-intro {
+		font-size: .6rem;
+	}
+	
+	.hi-wrapper {
+		flex-direction: column;
+	}
+	
+	.dccc-logo {
+		margin-bottom: 2em;
+		text-align:center;
+	}
+	
+	#logo {
+		max-width: 70%;
+		height: auto;
+	}
+	
+	/*home page*/
+	
+	.intro-message h3 {
+		font-size: .8rem;
+	}
+	
+	.hc-wrapper {
+		font-size: .8rem;
+	}
+	
+	.image-text, .image-text2 {
+		flex: 100%;
+		margin-bottom: 2em;
+		font-size: .9rem;
+	}
+	
+	.pic-of-me {
+		display: flex;
+		justify-content: center;
+	}
+	
+	#me {
+		width: 60%;
+		height: auto;
+	}
+	
+	/*appointments page*/
+	
+	.appt-content {
+		padding: 1em;
+	}
+	
+	.appt-wrapper h2 {
+		font-size: 1.1rem;
+	}
+	
+	.appt-wrapper h3 {
+		font-size: 1rem;
+	}
+	
+	.appt-wrapper p, li {
+		font-size: .9rem;
+	}
+	
+	/*contact page*/
+	
+	.contact-content {
+		height: 900px;
+	}
+	
+	.contact-wrapper {
+		height: 80%;
+		font-size: .8rem;
+	}
+	
+	.contact-wrapper h2 {
+		margin-bottom: 0;
+	}
+	
+	.contact-info {
+		height: 100%;
+		flex-direction: column;
+		align-items: space-around;
+	}
+	
+	.contact-info div {
+		padding: 1em;
+	}
+	
+	/*faqs page*/
+	
+	.faq-content {
+		padding: 2em 1em 11em 1em;
+	}
+	
+	.faq-wrapper h2 {
+		font-size: 1rem;
+	}
+	
+	.collapsible {
+		font-size: .8rem;
+	}
+	
+	.collapsible:after {
+		font-size: .8rem;
+	}
+	
+	
+	.coll-content {
+		padding: .9em;
+	}
+	
+	.coll-content h3 {
+		font-size: .8rem;
+	}
+
+	.coll-content p {
+		font-size: .8rem;
+	}
+	
+	.coll-content li {
+		margin-left: 1em;
+		font-size: .8rem;
+	}
+	
+	/*announcements page*/
+	
+	.ann-content {
+		height: 1000px;
+		padding: 2em .5em 0 .5em;
+	}
+
+	.ann-wrapper h2 {
+		margin-bottom: 1em;
+		font-size: .9rem;
+	}
+
+	.grid {
+		display: flex;
+		flex-direction: column;
+		font-size: .8rem;
+		border-bottom: 1px solid #000;
+		padding-bottom: 1em;
+	}
+
+	.update {
+		flex: 70%;
+		padding-bottom: .5em;
+	}
+
+	.date {
+		flex: 20%;
+		padding-left: 1em;
+	}
+	
+	/*footer*/
+	
+	.footer-wrapper {
+		flex-direction: column;
+		padding: .3em;
+	}
+
+	.location {
+		font-size: .8rem;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.app {
+		font-size: .7rem;
+		text-align: center;
+		padding: .5em;
+		margin-bottom: 1em;
+	}
+
+	.app img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.socials {
+		width: 250px;
+	}
+
+	.socials img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media (min-width: 240px) and (max-width: 319px) {
+	.top-nav a:not(:first-child) {display: none;}
+	.top-nav a.icon {
+		float: right;
+		display: block;
+	}
+	
+	.top-nav.responsive {position: relative;}
+	.top-nav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.top-nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.home-intro {
+		font-size: .6rem;
+	}
+	
+	.hi-wrapper {
+		flex-direction: column;
+	}
+	
+	.dccc-logo {
+		margin-bottom: 2em;
+		text-align:center;
+	}
+	
+	#logo {
+		max-width: 70%;
+		height: auto;
+	}
+	
+	/*home page*/
+	
+	.intro-message h3 {
+		font-size: .6rem;
+	}
+	
+	.hc-wrapper {
+		font-size: .6rem;
+	}
+	
+	.image-text, .image-text2 {
+		flex: 100%;
+		margin-bottom: 2em;
+		font-size: .8rem;
+	}
+	
+	.pic-of-me {
+		display: flex;
+		justify-content: center;
+	}
+	
+	#me {
+		width: 60%;
+		height: auto;
+	}
+	
+	/*appointments page*/
+	
+	.appt-content {
+		padding: .5em;
+	}
+	
+	.appt-wrapper h2 {
+		font-size: 1rem;
+	}
+	
+	.appt-wrapper h3 {
+		font-size: .9rem;
+	}
+	
+	.appt-wrapper p, li {
+		font-size: .8rem;
+	}
+	
+	/*contact page*/
+	
+	.contact-content {
+		height: 900px;
+		padding: 3em .5em 0 .5em;
+	}
+	
+	.contact-wrapper {
+		width: 100%;
+		height: 80%;
+		font-size: .8rem;
+	}
+	
+	.contact-wrapper h2 {
+		margin-bottom: 0;
+	}
+	
+	.contact-info {
+		width: 90%;
+		height: 100%;
+		flex-direction: column;
+		align-items: space-around;
+	}
+	
+	.contact-info div {
+		padding: 1em;
+	}
+	
+	/*faqs page*/
+	
+	.faq-content {
+		padding: 2em 1em 11em 1em;
+	}
+	
+	.faq-wrapper h2 {
+		font-size: .9rem;
+	}
+	
+	.collapsible {
+		font-size: .7rem;
+	}
+	
+	.collapsible:after {
+		font-size: .7rem;
+	}
+	
+	
+	.coll-content {
+		padding: .8em;
+	}
+	
+	.coll-content h3 {
+		font-size: .7rem;
+	}
+
+	.coll-content p {
+		font-size: .7rem;
+	}
+	
+	.coll-content li {
+		margin-left: .5em;
+		font-size: .7rem;
+	}
+	
+	/*announcements page*/
+	
+	.ann-content {
+		height: 1000px;
+		padding: 2em .5em 0 .5em;
+	}
+
+	.ann-wrapper h2 {
+		margin-bottom: 1em;
+		font-size: .8rem;
+	}
+
+	.grid {
+		display: flex;
+		flex-direction: column;
+		font-size: .7rem;
+		border-bottom: 1px solid #000;
+		padding-bottom: 1em;
+	}
+
+	.update {
+		flex: 70%;
+		padding-bottom: .5em;
+	}
+
+	.date {
+		flex: 20%;
+		padding-left: 1em;
+	}
+	
+	/*footer*/
+	
+	.footer-wrapper {
+		flex-direction: column;
+		padding: .3em;
+	}
+
+	.location {
+		font-size: .8rem;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.app {
+		font-size: .7rem;
+		text-align: center;
+		padding: .5em;
+		margin-bottom: 1em;
+	}
+
+	.app img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.socials {
+		width: 250px;
+	}
+
+	.socials img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
