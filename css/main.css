@@ -101,7 +101,9 @@ html {
 }
 
 body {
-	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: Arial;
 	color: #393635;
 	background-color: #FFF;
@@ -111,24 +113,6 @@ body {
 
 /*-----------------------------------------------------GlOBAL STYLES-----------------------------------------------------*/ 
 
-/*TOP LEVEL CONTAINER*/
-
-/* main { */
-	/* padding-top: 3em; */
-/* } */
-
-/*UNORDERED LISTS*/
-
-.item-head {
-	text-decoration: underline;
-	list-style-type: none;
-}
-
-.sub-item {
-	list-style-type: square;
-	margin-left: 2em;
-	line-height: 2;
-}
 
 /*TOP NAVIGATION MENU*/
 
@@ -158,6 +142,19 @@ body {
 
 .top-nav .icon {
 	display: none;
+}
+
+/*LISTS*/
+
+.item-head {
+	list-style-type: none;
+	font-size: 1.5rem;
+}
+
+.sub-item {
+	list-style-type: square;
+	font-size: 1.5rem;
+	margin-left: 2em;
 } 
 
 /*FOOTER*/
@@ -165,6 +162,7 @@ body {
 footer {
 	color: #FFF;
 	background-color: #0E579B;
+	margin-top: auto;
 }
 
 .footer-wrapper {
@@ -172,7 +170,6 @@ footer {
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 1em;
-	
 }
 
 .location {
@@ -307,7 +304,7 @@ footer {
 	text-shadow: 2px 2px #FFCF06;
 }
 
-#font-change {
+.font-change {
 	text-transform: uppercase;
 }
 
@@ -334,21 +331,11 @@ footer {
 	width: 90%;
 }
 
-.item-head {
-	text-decoration: underline;
-	list-style-type: none;
-}
-
-.sub-item {
-	list-style-type: square;
-	margin-left: 2em;
-}
-
 /*-----------------------------------------------------APPOINTMENTS PAGE STYLES-----------------------------------------------------*/ 
 
 .appt-content {
 	height: 1000px;
-	padding: 3em 3em 5em 3em;
+	padding: 3em 3em 0 3em;
 }
 
 .appt-wrapper {
@@ -391,7 +378,7 @@ footer {
 
 .contact-content {
 	height: 700px;
-	padding: 3em 3em 5em 3em;
+	padding: 3em 3em 0 3em;
 }
 
 .contact-wrapper {
@@ -450,7 +437,7 @@ footer {
 
 .faq-content {
 	height: auto;
-	padding: 2em 3em 11em 2em;
+	padding: 2em 3em 3em 2em;
 }
 
 .faq-wrapper button {
@@ -717,6 +704,15 @@ footer {
 		height: auto;
 	}
 	
+	.item-head {
+		font-size: 1.1rem;
+	}
+
+	.sub-item {
+		font-size: 1.1rem;
+		margin-left: 2em;
+	}
+	
 	
 	/*home page*/
 	
@@ -737,7 +733,7 @@ footer {
 	/*appointments page*/
 	
 	.appt-content {
-		padding: 2em 2em 8em 2em;
+		padding: 2em 2em 0em 2em;
 	}
 	
 	/*contact page*/
@@ -758,7 +754,7 @@ footer {
 	.contact-info {
 		height: 100%;
 		flex-direction: column;
-		align-items: space-around;
+		align-content: space-around;
 	}
 	
 	/*faqs page*/
@@ -769,7 +765,7 @@ footer {
 	
 	.faq-content {
 		height: auto;
-		padding: 2em 3em 18em 2em;
+		padding: 2em 3em 3em 2em;
 	}
 	
 	.collapsible {
@@ -853,6 +849,15 @@ footer {
 		height: auto;
 	}
 	
+	.item-head {
+		font-size: 1.1rem;
+	}
+
+	.sub-item {
+		font-size: 1.1rem;
+		margin-left: 2em;
+	}
+	
 	/*home page*/
 	
 	.intro-message {
@@ -881,7 +886,7 @@ footer {
 	/*appointments page*/
 	
 	.appt-content {
-		padding: 5em 2em 9em 2em;
+		padding: 5em 2em 0em 2em;
 	}
 	
 	.appt-wrapper h2 {
@@ -914,13 +919,13 @@ footer {
 	.contact-info {
 		height: 100%;
 		flex-direction: column;
-		align-items: space-around;
+		align-contact: space-around;
 	}
 	
 	/*faqs page*/
 	
 	.faq-content {
-		padding: 2em 1em 11em 1em;
+		padding: 2em 1em 3em 1em;
 	}
 	
 	.faq-wrapper h2 {
@@ -1017,7 +1022,7 @@ footer {
 	}
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
 	.top-nav a:not(:first-child) {display: none;}
 	.top-nav a.icon {
 		float: right;
@@ -1053,6 +1058,15 @@ footer {
 	#logo {
 		max-width: 70%;
 		height: auto;
+	}
+	
+	.item-head {
+		font-size: 1rem;
+	}
+
+	.sub-item {
+		font-size: 1rem;
+		margin-left: 2em;
 	}
 	
 	/*home page*/
@@ -1117,7 +1131,7 @@ footer {
 	.contact-info {
 		height: 100%;
 		flex-direction: column;
-		align-items: space-around;
+		align-content: space-around;
 	}
 	
 	.contact-info div {
@@ -1127,7 +1141,7 @@ footer {
 	/*faqs page*/
 	
 	.faq-content {
-		padding: 2em 1em 11em 1em;
+		padding: 2em 1em 3em 1em;
 	}
 	
 	.faq-wrapper h2 {
@@ -1225,7 +1239,7 @@ footer {
 	}
 }
 
-@media (min-width: 240px) and (max-width: 319px) {
+@media (min-width: 240px) and (max-width: 320px) {
 	.top-nav a:not(:first-child) {display: none;}
 	.top-nav a.icon {
 		float: right;
@@ -1243,6 +1257,15 @@ footer {
 		float: none;
 		display: block;
 		text-align: left;
+	}
+	
+	.item-head {
+		font-size: .9rem;
+	}
+
+	.sub-item {
+		font-size: .9rem;
+		margin-left: 2em;
 	}
 	
 	.home-intro {
@@ -1328,7 +1351,7 @@ footer {
 		width: 90%;
 		height: 100%;
 		flex-direction: column;
-		align-items: space-around;
+		align-content: space-around;
 	}
 	
 	.contact-info div {
@@ -1338,7 +1361,7 @@ footer {
 	/*faqs page*/
 	
 	.faq-content {
-		padding: 2em 1em 11em 1em;
+		padding: 2em 1em 3em 1em;
 	}
 	
 	.faq-wrapper h2 {
